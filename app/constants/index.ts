@@ -1,4 +1,5 @@
 import type { AxisModel } from "@syncfusion/ej2-react-charts";
+import {formatDate} from "../../lib/utils";
 
 export const sidebarItems = [
   {
@@ -140,3 +141,42 @@ export const RIGHT_CONFETTI = {
   angle: 135,
   origin: { x: 1, y: 1 },
 };
+
+export const users = [
+  {
+    id: 1,
+    name: "John Doe",
+    email: "john.doe@example.com",
+    imageUrl: "/assets/images/david.webp",
+    dateJoined: formatDate("2025-01-01"),
+    itineraryCreated: 10,
+    status: "user",
+  },
+  {
+    id: 2,
+    name: "Jane Smith",
+    email: "jane.smith@example.com",
+    imageUrl: "/assets/images/david.webp",
+    dateJoined: formatDate("2025-01-02"),
+    itineraryCreated: 4,
+    status: "user",
+  },
+  {
+    id: 3,
+    name: "John Smith",
+    email: "john.smith@example.com",
+    imageUrl: "/assets/images/david.webp",
+    dateJoined: formatDate("2025-01-03"),
+    itineraryCreated: 8,
+    status: "admin",
+  },
+];
+export const user = { name : 'Adrian'}
+export const dashboardStats = {
+  totalUsers: 12450,
+  usersJoined: {currentMonth : 218, lastMonth : 176},
+  totalTrips: 3210,
+  tripsCreated : {currentMonth : 150, lastMonth : 250},
+  userRole : {total:62, currentMonth : 25, lastMonth : 15},
+}
+export const allTrips = []
